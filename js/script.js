@@ -1,19 +1,26 @@
 
-for (let i = 0; i < 100 ; i++){
+for (let i = 0; i <= 100 ; i++){
+
+    let num = document.getElementById('#number');
 
     if( i % 3 == 0 && i % 5 == 0){
-        console.log("FizzBuzz");
+        i.backgroundColor = "#f0466f";
+        
+        num.append(fizzBuzz);
     }
 
     else if(i % 3 == 0){
-        console.log("Fizz");
+        i.backgroundColor = "#0cd6a1";
+        num.append("Fizz");
     }
     else if(i % 5 == 0){
-        console.log("Buzz");
+        i.backgroundColor = "#ffd166";
+        num.append("Buzz");
     }
 
     else{
-        console.log(i);
+        i.backgroundColor = "#1389b2";
+        num.append(i);
     }
 
 }
