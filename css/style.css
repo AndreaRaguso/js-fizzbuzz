@@ -1,3 +1,11 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .wrapper{
     background-color: #083b4c;
     height: 100vh;
@@ -8,6 +16,10 @@
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
+}
+
+.container h1 {
+    color: white;
 }
 
 ul{

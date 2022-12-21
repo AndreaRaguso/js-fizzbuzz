@@ -1,26 +1,35 @@
 
 for (let i = 0; i <= 100 ; i++){
 
-    let num = document.getElementById('#number');
-
     if( i % 3 == 0 && i % 5 == 0){
-        i.backgroundColor = "#f0466f";
-        
+        let num = document.getElementById('number');
+        const fizzBuzz= document.createElement("span");
+        fizzBuzz.style.backgroundColor = "red";
+        fizzBuzz.textContent = "FizzBuzz";
         num.append(fizzBuzz);
     }
 
     else if(i % 3 == 0){
-        i.backgroundColor = "#0cd6a1";
-        num.append("Fizz");
+        let num = document.getElementById('number');
+        const fizz= document.createElement("span");
+        fizz.style.backgroundColor = "red";
+        fizz.textContent = "Fizz";
+        num.append(fizz);
     }
     else if(i % 5 == 0){
-        i.backgroundColor = "#ffd166";
-        num.append("Buzz");
+        let num = document.getElementById('number');
+        const buzz= document.createElement("span");
+        buzz.style.backgroundColor = "red";
+        buzz.textContent = "Buzz";
+        num.append(buzz);
     }
 
     else{
-        i.backgroundColor = "#1389b2";
-        num.append(i);
+        let num = document.getElementById('number');
+        const normal= document.createElement("span");
+        normal.style.backgroundColor = "red";
+        normal.textContent = i;
+        num.append(normal);
     }
 
 }
