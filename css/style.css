@@ -8,21 +8,32 @@
 
 .wrapper{
     background-color: #083b4c;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
 .container{
-    max-width: 1000px;
+    max-width: 650px;
     margin: 0 auto;
     text-align: center;
 }
 
 .container h1 {
     color: white;
+    font-size: 60px;
+    margin-bottom: 30px;
 }
 
 ul{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul li {
+    list-style: none;
+    width: calc(100% / 7 - 20px);
+    height: 70px;
+    line-height: 70px;
+    margin: 10px;
 }
